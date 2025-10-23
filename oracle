@@ -3,3 +3,5 @@ FROM dba_users
 WHERE account_status = 'LOCKED';
 
 ALTER USER username ACCOUNT UNLOCK;
+
+ALTER USER username IDENTIFIED BY new_password;
