@@ -1,0 +1,5 @@
+SELECT username, account_status
+FROM dba_users
+WHERE account_status = 'LOCKED';
+
+ALTER USER username ACCOUNT UNLOCK;
